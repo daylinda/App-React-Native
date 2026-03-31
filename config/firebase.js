@@ -9,7 +9,7 @@ import { initializeApp, getApps, getApp } from "firebase/app";
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "",
+  apiKey: "smlsc",
   authDomain: "trackerapp-b5664.firebaseapp.com",
   databaseURL:
     "https://trackerapp-b5664-default-rtdb.asia-southeast1.firebasedatabase.app",
