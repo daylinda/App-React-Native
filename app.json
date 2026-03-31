@@ -1,11 +1,15 @@
 {
   "expo": {
+    "scheme": "myapp",
+    "experiments": {
+      "typedRoutes": true
+    },
     "name": "MyApp",
     "slug": "MyApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -13,6 +17,7 @@
     },
     "ios": {
       "supportsTablet": true
+      
     },
     "android": {
       "adaptiveIcon": {
@@ -20,10 +25,15 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "googleServicesFile": "./google_services/google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+      
+    ]
   }
 }

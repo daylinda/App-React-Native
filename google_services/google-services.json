@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "601546372984",
+    "firebase_url": "https://trackerapp-b5664-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "trackerapp-b5664",
+    "storage_bucket": "trackerapp-b5664.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601546372984:android:ec8d75bf1ac5d6134f7a8d",
+        "android_client_info": {
+          "package_name": "com.davina.learning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2hskcBmB6t3DaM2gXPjlaVYcf9r1GW5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
