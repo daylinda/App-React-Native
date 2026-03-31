@@ -21,6 +21,7 @@ import { TouchableWithoutFeedback } from "react-native";
 
 import { useUser } from "../../hooks/useUser";
 import { PhoneMultiFactorGenerator } from "firebase/auth/web-extension";
+import ThemedLoading from "../../components/ThemedLoading";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -99,11 +100,12 @@ const Register = () => {
         </Link>
 
         {loading && (
-          <ActivityIndicator
-            size="large"
-            color={Colors.primary}
-            style={{ marginTop: 20 }}
-          />
+          // <ActivityIndicator
+          //   size="large"
+          //   color={Colors.primary}
+          //   style={{ marginTop: 20 }}
+          // />
+          <ThemedLoading />
         )}
       </ThemedView>
     </TouchableWithoutFeedback>
