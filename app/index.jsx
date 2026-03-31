@@ -30,17 +30,18 @@ const Home = () => {
     //   </Link>
     // </ThemedView>
 
-    <NavigationContainer>
-    <Stack.Navigator>
-      {user ? (
-        // User is logged in
-        <Stack.Screen name="UserPage" component={UserScreen} />
-      ) : (
-        // No user context found
-        <Stack.Screen name="Login" component={LoginScreen} />
-      )}
-    </Stack.Navigator>
-  </NavigationContainer>
+  //   <NavigationContainer>
+  //   <Stack.Navigator>
+  //     {user ? (
+  //       // User is logged in
+  //       <Stack.Screen name="UserPage" component={UserScreen} />
+  //     ) : (
+  //       // No user context found
+  //       <Stack.Screen name="Login" component={LoginScreen} />
+  //     )}
+  //   </Stack.Navigator>
+  // </NavigationContainer>
+  <></>
   );
 };
 
