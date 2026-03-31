@@ -13,22 +13,34 @@ const Home = () => {
   console.log("Current color scheme:", colorScheme);
   const themeColors = Colors[colorScheme] ?? Colors.light; // Fallback to light theme if colorScheme is undefined
   return (
-    <ThemedView style={styles.container} safe={true} >
-      <ThemedLogo style={styles.logo} />
+    // <ThemedView style={styles.container} safe={true} >
+    //   <ThemedLogo style={styles.logo} />
 
-      <Themedtext style={styles.title}>This is the best APP</Themedtext>
-      <Themedtext> Welcome to the AppList</Themedtext>
+    //   <Themedtext style={styles.title}>This is the best APP</Themedtext>
+    //   <Themedtext> Welcome to the AppList</Themedtext>
       
-      <Link href="/login" style={styles.link}>
-        <Themedtext>Login</Themedtext>
-      </Link>
-      <Link href="/register" style={styles.link}>
-        <Themedtext>Register</Themedtext>
-      </Link>
-      <Link href="/profile" style={styles.link}>
-        <Themedtext>Profile</Themedtext>
-      </Link>
-    </ThemedView>
+    //   <Link href="/login" style={styles.link}>
+    //     <Themedtext>Login</Themedtext>
+    //   </Link>
+    //   <Link href="/register" style={styles.link}>
+    //     <Themedtext>Register</Themedtext>
+    //   </Link>
+    //   <Link href="/profile" style={styles.link}>
+    //     <Themedtext>Profile</Themedtext>
+    //   </Link>
+    // </ThemedView>
+
+    <NavigationContainer>
+    <Stack.Navigator>
+      {user ? (
+        // User is logged in
+        <Stack.Screen name="UserPage" component={UserScreen} />
+      ) : (
+        // No user context found
+        <Stack.Screen name="Login" component={LoginScreen} />
+      )}
+    </Stack.Navigator>
+  </NavigationContainer>
   );
 };
 
